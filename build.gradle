@@ -23,12 +23,9 @@ project.ext {
 
 repositories {
     mavenCentral()
-    maven {
-        url 'http://code.google.com/p/google-maven-repository'
-    }
 }
 
 
 dependencies {
-    testCompile(project.ext.hamcrest, project.ext.junit)
+    testImplementation(project.ext.hamcrest, project.ext.junit)
 }
